@@ -24,6 +24,7 @@ const config = {
       'warn',
       {
         argsIgnorePattern: '^_',
+        varsIgnorePattern: 'React',
       },
     ],
     '@typescript-eslint/require-await': 'off',
@@ -35,6 +36,10 @@ const config = {
         },
       },
     ],
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
     'no-unused-vars': ['error', { varsIgnorePattern: 'React' }],
   },
 };
