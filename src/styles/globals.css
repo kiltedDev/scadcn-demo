@@ -66,33 +66,44 @@
   }
 
   .donovan {
-    --background: 218, 17%, 9%;
-    --foreground: 0 0% 98%;
+    /* Default colors for <body /> */
+    --background: 218, 17%, 9%; /* Legacy Value - neutral-50 */
+    --foreground: 0 0% 98%; /* Legacy Value - neutral-900 */
 
-    --card: 218, 15%, 14%;
+    /* Default colors for <Card /> */
+    --card: 218, 15%, 14%; /* Figma Value */
     --card-foreground: 60 9.1% 97.8%;
 
+    /* Default colors for popovers such as <DropdownMenu />, <HoverCard />, <Popover /> */
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
 
-    --primary: 245 93% 67%;
-    --primary-foreground: 0, 0%, 98%;
+    /* Default / Primary colors for <Button /> */
+    --primary: 245 93% 67%; /* Figma Value */
+    --primary-foreground: 0, 0%, 98%; /* Legacy Value - neutral-900 */
 
-    --secondary: 215 14% 34%;
-    --secondary-foreground: 220, 14%, 96%;
+    /* Secondary colors for <Button /> */
+    --secondary: 215, 14%, 34%; /* Figma Value */
+    --secondary-foreground: 220, 14%, 96%; /* Figma Value */
 
-    --muted: 218, 17%, 19%;
-    --muted-foreground: 218 11% 65%;
+    /* Muted elements such as <TabsList />, <Skeleton /> and <Switch /> */
+    --muted: 218, 17%, 19%; /* Legacy Value - from neutral-100 */
+    --muted-foreground: 218 11% 65%; /* Figma Value */
 
-    --accent: 245, 28%, 15%;
+    /* Used for accents such as hover effects on <DropdownMenuItem>, <SelectItem>...etc */
+    --accent: 245, 28%, 15%; /* Legacy Value - primary-50 */
     --accent-foreground: 60 9.1% 97.8%;
 
+    /* Colors for <Button variant="destructive" /> */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 60 9.1% 97.8%;
 
-    --border: 214, 16%, 28%;
+    /* Default Border color */
+    --border: 214, 16%, 28%; /* Legacy Value - neutral-200 */
+    /* Border color for inputs such as <Input />, <Select />, <Textarea /> */
     --input: 12 6.5% 15.1%;
-    --ring: 24 5.7% 82.9%;
+    /* Used for focus ring */
+    --ring: 24 5.7% 25.9%;
   }
 }
 
