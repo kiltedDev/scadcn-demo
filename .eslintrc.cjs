@@ -40,7 +40,13 @@ const config = {
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
-    'no-unused-vars': ['error', { varsIgnorePattern: 'React' }],
+    'no-unused-vars': [
+      'error',
+      {
+        varsIgnorePattern: '^_|^React',
+        argsIgnorePattern: '^_',
+      },
+    ],
   },
 };
 module.exports = config;
