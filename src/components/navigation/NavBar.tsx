@@ -46,6 +46,11 @@ const examples = [
     href: '/authentication',
     code: 'https://github.com/shadcn/ui/tree/main/apps/www/app/(app)/examples/authentication',
   },
+  {
+    name: 'Components',
+    href: '/components',
+    code: '',
+  },
 ];
 
 type ExamplesNavProps = React.HTMLAttributes<HTMLDivElement>;
@@ -56,7 +61,7 @@ export function NavBar({ className, ...props }: ExamplesNavProps) {
   return (
     <div className="relative">
       <ScrollArea className="max-w-[600px] lg:max-w-none">
-        <div className={cn('mb-4 flex items-center', className)} {...props}>
+        <div className={cn('mb-4 flex items-center p-1', className)} {...props}>
           {examples.map((example, index) => (
             <Link
               href={example.href}
@@ -64,7 +69,7 @@ export function NavBar({ className, ...props }: ExamplesNavProps) {
               className={cn(
                 'flex h-7 items-center justify-center rounded-full px-4 text-center text-sm transition-colors hover:text-primary',
                 pathname?.startsWith(example.href) || (index === 0 && pathname === '/')
-                  ? 'bg-muted font-medium text-primary'
+                  ? 'bg-muted font-medium text-foreground'
                   : 'text-muted-foreground',
               )}
             >

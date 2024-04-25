@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} donovan`}>
+      <body className={`font-sans ${inter.variable} dark`}>
         <TRPCReactProvider>
           <div className="p-4">
             <NavBar />
