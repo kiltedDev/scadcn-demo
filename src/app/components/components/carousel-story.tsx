@@ -16,7 +16,7 @@ import { useCallback, useEffect, useState } from 'react';
 export const CarouselStory = () => {
   const [mainCarouselApi, setMainCarouselApi] = useState<CarouselApi>();
   const [thumbnailCarouselApi, setThumbnailCarouselApi] = useState<CarouselApi>();
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [_selectedIndex, setSelectedIndex] = useState(0);
 
   const onThumbClick = useCallback(
     (index: number) => {
