@@ -51,6 +51,11 @@ const examples = [
     href: '/components',
     code: '',
   },
+  {
+    name: 'Theme',
+    href: '/theme',
+    code: '',
+  },
 ];
 
 type ExamplesNavProps = React.HTMLAttributes<HTMLDivElement>;

@@ -2,6 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { AvatarStory } from './components/avatar-story';
 import { ButtonStory } from './components/button-story';
 import { CardStory } from './components/card-story';
+import { CarouselStory } from './components/carousel-story';
 
 const components = [
   {
@@ -15,6 +16,10 @@ const components = [
   {
     value: 'card',
     component: <CardStory />,
+  },
+  {
+    value: 'carousel',
+    component: <CarouselStory />,
   },
 ];
 

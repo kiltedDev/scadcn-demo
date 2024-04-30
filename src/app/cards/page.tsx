@@ -29,14 +29,14 @@ export default function CardsPage() {
     <>
       <div className="md:hidden">
         <Image
-          src="/examples/cards-light.png"
+          src="/cards-light.png"
           width={1280}
           height={1214}
           alt="Cards"
           className="block dark:hidden"
         />
         <Image
-          src="/examples/cards-dark.png"
+          src="/cards-dark.png"
           width={1280}
           height={1214}
           alt="Cards"

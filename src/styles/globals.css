@@ -37,41 +37,41 @@
 
   .dark {
     /* Default colors for <body /> */
-    --background: 218, 17%, 9%; /* Legacy Value - neutral-50 | rgb(20, 23, 28) | #14171C */
-    --foreground: 0 0% 98%; /* Legacy Value - neutral-900 | rgb(250, 250, 250) | #FAFAFA */
+    --background: 218 17% 9%; /* Source: neutral-50 | rgb(20, 23, 28) | #14171C */
+    --foreground: 0 0% 98%; /* Source: neutral-900 | rgb(250, 250, 250) | #FAFAFA */
 
     /* Default colors for <Card /> */
-    --card: 218, 15%, 14%; /* Figma Value - rgb(30, 34, 41) | #1E2229 */
-    --card-foreground: 0 0% 98%; /* Legacy Value - neutral-900 | rgb(250, 250, 250) | #FAFAFA */
+    --card: 218 15% 14%; /* Source: Figma | rgb(30, 34, 41) | #1E2229 */
+    --card-foreground: 0 0% 98%; /* Source: neutral-900 | rgb(250, 250, 250) | #FAFAFA */
 
     /* Default colors for popovers such as <DropdownMenu />, <HoverCard />, <Popover /> */
-    --popover: 218, 17%, 9%; /* Legacy Value - neutral-50 | rgb(20, 23, 28) | #14171C */
-    --popover-foreground: 0 0% 98%; /* Legacy Value - neutral-900 | rgb(250, 250, 250) | #FAFAFA */
+    --popover: 218 17% 9%; /* Source: neutral-50 | rgb(20, 23, 28) | #14171C */
+    --popover-foreground: 0 0% 98%; /* Source: neutral-900 | rgb(250, 250, 250) | #FAFAFA */
 
     /* Default / Primary colors for <Button /> */
-    --primary: 245 93% 67%; /* Figma Value - rgb(106, 93, 249) | #6A5DF9 */
-    --primary-foreground: 0 0% 98%; /* Legacy Value - neutral-900 | rgb(250, 250, 250) | #FAFAFA */
+    --primary: 245 93% 67%; /* Source: Figma | rgb(106, 93, 249) | #6A5DF9 */
+    --primary-foreground: 0 0% 98%; /* Source: neutral-900 | rgb(250, 250, 250) | #FAFAFA */
 
     /* Secondary colors for <Button /> */
-    --secondary: 215 14% 34%; /* Figma Value - rgb(75, 85, 99) | #4B5563 */
-    --secondary-foreground: 220 14% 96%; /* Figma Value - rgb(243, 244, 246) | #F3F4F6 */
+    --secondary: 215 14% 34%; /* Source: Figma | rgb(75, 85, 99) | #4B5563 */
+    --secondary-foreground: 220 14% 96%; /* Source: neutral 800 | #F3F4F6 */
 
     /* Muted elements such as <TabsList />, <Skeleton /> and <Switch /> */
-    --muted: 218, 17%, 19%; /* Legacy Value - from neutral-100 | rgb(40, 46, 56) | #282E38 */
-    --muted-foreground: 217 15% 79%; /* Legacy Value - neutral-700 | rgb(193, 199, 209) | #C1C7D1 */
+    --muted: 218 17% 19%; /* Source: from neutral-100 | rgb(40, 46, 56) | #282E38 */
+    --muted-foreground: 217 15% 79%; /* Source: neutral-700 | rgb(193, 199, 209) | #C1C7D1 */
 
     /* Used for accents such as hover effects on <DropdownMenuItem>, <SelectItem>...etc */
-    --accent: 245, 28%, 15%; /* Legacy Value - primary-50 | rgb(30, 28, 50) | #1E1C32 */
-    --accent-foreground: 0 0% 98%; /* Legacy Value - neutral-900 | rgb(250, 250, 250) | #FAFAFA */
+    --accent: 245 28% 15%; /* Source: primary-50 | rgb(30, 28, 50) | #1E1C32 */
+    --accent-foreground: 0 0% 98%; /* Source: neutral-900 | rgb(250, 250, 250) | #FAFAFA */
 
     /* Colors for <Button variant="destructive" /> */
-    --destructive: 357 51% 30%; /* Figma Value - Dataset Warning Banner | rgb(116, 37, 41) | #742529 */
-    --destructive-foreground: 0 0% 98%; /* Legacy Value - neutral-900 | rgb(250, 250, 250) | #FAFAFA */
+    --destructive: 0 66% 47%; /* Source: Figma | rgb(106, 93, 249) | #6A5DF9 */
+    --destructive-foreground: 220 14% 96%; /* Source: neutral 800 | #F3F4F6 */
 
     /* Default Border color */
-    --border: 214, 16%, 28%; /* Legacy Value - neutral-200 | rgb(60, 70, 83) | #3C4653 */
+    --border: 214 16% 28%; /* Source: neutral-200 | rgb(60, 70, 83) | #3C4653 */
     /* Border color for inputs such as <Input />, <Select />, <Textarea /> */
-    --input: 214, 16%, 28%; /* Legacy Value - neutral-200 | rgb(60, 70, 83) | #3C4653 */
+    --input: 214 16% 28%; /* Source: neutral-200 | rgb(60, 70, 83) | #3C4653 */
     /* Used for focus ring */
     --ring: 24 5.7% 25.9%;
   }
