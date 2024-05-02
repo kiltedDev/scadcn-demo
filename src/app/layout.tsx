@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`font-sans ${inter.variable} dark`}>
         <TRPCReactProvider>
-          <div className="p-4">
+          <div className="flex flex-col gap-2 p-4 container mx-auto min-h-[95dvh]">
             <NavBar />
             {children}
           </div>

@@ -1,4 +1,6 @@
 export type ThemeFormFields = {
+  groupId: string;
+  showAll: boolean;
   ['background']: string;
   ['foreground']: string;
   ['card']: string;
@@ -18,4 +20,11 @@ export type ThemeFormFields = {
   ['border']: string;
   ['input']: string;
   ['ring']: string;
+};
+
+export type ThemeGroup = {
+  id: string;
+  title: string;
+  description: string;
+  component: React.ReactNode;
 };

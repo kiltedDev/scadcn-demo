@@ -78,6 +78,31 @@ const config = {
       },
     },
   },
+  purge: {
+    options: {
+      safelist: [
+        'bg-foreground',
+        'bg-background',
+        'bg-primary',
+        'bg-secondary',
+        'bg-destructive',
+        'bg-muted',
+        'bg-accent',
+        'bg-popover',
+        'bg-card',
+        'bg-primary-foreground',
+        'bg-secondary-foreground',
+        'bg-destructive-foreground',
+        'bg-muted-foreground',
+        'bg-accent-foreground',
+        'bg-popover-foreground',
+        'bg-card-foreground',
+        'bg-ring',
+        'bg-border',
+        'bg-input',
+      ],
+    },
+  },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
 

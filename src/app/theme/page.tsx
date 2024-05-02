@@ -3,14 +3,16 @@
 import { useEffect, useRef } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import tinycolor from 'tinycolor2';
-import { VariableCard } from './components/variable-card';
+import { ThemeRadioGroup } from './components/theme-radio-group';
+import { ThemeHeader } from './components/theme.header';
+import { VariableInputGroup } from './components/variable-input-group';
 import { ThemeVariables, defaultValues } from './theme.constants';
 import { type ThemeFormFields } from './theme.types';
 
-const desiredRegexFormat = new RegExp(/^\d{1,3}\s\d{1,3}%?\s\d{1,3}%?$/);
+const desiredRegexFormat = new RegExp(/^\d{1,3}\s\d{1,3}(\.\d+)?%?\s\d{1,3}(\.\d+)?%?$/);
 
 function formatHSL(userInput: string): string {
-  if (desiredRegexFormat.test(userInput)) return userInput;
+  if (!userInput || desiredRegexFormat.test(userInput)) return userInput;
 
   // any invalid string will be translated to black by tinycolor
   const hslString = tinycolor(userInput).toHslString();
@@ -27,7 +29,8 @@ export default function ThemePage() {
 
   useEffect(() => {
     Object.entries(values).forEach(([name, value]) => {
-      const parsedValue = formatHSL(value);
+      if (name === 'showAll' || name === 'groupId') return;
+      const parsedValue = formatHSL(value as string);
       if (
         parsedValue !== prevValuesRef.current[name as keyof ThemeFormFields] &&
         name in defaultValues
@@ -57,10 +60,12 @@ export default function ThemePage() {
 
   return (
     <FormProvider {...methods}>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 gap-x-4">
-        {ThemeVariables.map(themeVariable => (
-          <VariableCard key={themeVariable} variable={themeVariable} />
-        ))}
+      <div className="h-full flex flex-col gap-4 grow">
+        <ThemeHeader />
+        <div className="flex gap-4 grow">
+          <ThemeRadioGroup />
+          <VariableInputGroup />
+        </div>
       </div>
     </FormProvider>
   );
